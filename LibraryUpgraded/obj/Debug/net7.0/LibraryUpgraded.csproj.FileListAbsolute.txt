@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\LibraryUpgraded.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\LibraryUpgraded.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\LibraryUpgraded.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\LibraryUpgraded.AssemblyInfo.cs
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\LibraryUpgraded.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\bin\Debug\net7.0\LibraryUpgraded.exe
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\bin\Debug\net7.0\LibraryUpgraded.deps.json
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\bin\Debug\net7.0\LibraryUpgraded.runtimeconfig.json
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\bin\Debug\net7.0\LibraryUpgraded.dll
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\bin\Debug\net7.0\LibraryUpgraded.pdb
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\LibraryUpgraded.dll
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\refint\LibraryUpgraded.dll
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\LibraryUpgraded.pdb
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\LibraryUpgraded.genruntimeconfig.cache
+C:\Users\HP\Desktop\Projects\Lib v2.0\LibraryUpgraded\LibraryUpgraded\obj\Debug\net7.0\ref\LibraryUpgraded.dll

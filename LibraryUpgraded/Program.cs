@@ -1,4 +1,5 @@
-﻿using LibraryUpgraded.Member;
+﻿using LibraryUpgraded.Book;
+using LibraryUpgraded.Member;
 
 namespace LibraryUpgraded
 {
@@ -6,8 +7,6 @@ namespace LibraryUpgraded
     {
         static void Main(string[] args)
         {
-            _Member ali = new _Member("sdf",123);
-            
         }
     }
 }

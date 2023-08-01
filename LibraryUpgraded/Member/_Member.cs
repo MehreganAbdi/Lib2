@@ -10,14 +10,14 @@ namespace LibraryUpgraded.Member
 {
     public class _Member : IGeneralProperties
     {
-        private string name;
+        public string name;
         string IGeneralProperties.Name {
             get => name; 
             set => name = value;  
         }
 
 
-        private int id;
+        public int id;
          int IGeneralProperties.ID 
         {
             get => id;  
@@ -26,19 +26,22 @@ namespace LibraryUpgraded.Member
         }
 
 
-        private DateTime addedDate;
+        public DateTime addedDate;
         DateTime IGeneralProperties.AddedDate
         {
             get => addedDate;
             set => addedDate = value;
         }
 
+        public  double Fine_dollars ;
+        
        public  _Member(string name , int ID )
         {
+            name = name.ToLower().Replace(" ", "");
             this.name = name;
             this.id = ID;
             this.addedDate = DateTime.Now;
-
+            this.Fine_dollars = 0;
         }
 
 
