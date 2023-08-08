@@ -40,30 +40,31 @@ namespace LibraryUpgraded.Book
             int count = 0;
             foreach(var item in _Data.AvailableBooks)
             {
-                if(item.id == book.id && item.NumberOfBook>1)
+                if(item.id == book.id && item.NumberOfBook>=1)
                 {
-                    if (item.NumberOfBook == 1)
+                    if (book.NumberOfBook == 1)
                     {
-                        _Data.AvailableBooks.Remove(item);
+                    global: _Data.AvailableBooks.Remove(book); ;
+                        
                     }
                     else
                     {
-                        item.NumberOfBook--;
+                        book.NumberOfBook--;
                     }
                     count++;
                 }
             }
-            if (count == 0)
-            {
-                foreach (var item in _Data.LoanedBooks)
-                {
-                    if (item.id == book.id)
-                    {
-                        Console.WriteLine("The book is on loan , you have to recieve it first");
-                        count++;
-                    }
-                }
-            }
+            //if (count == 0)
+            //{
+            //    foreach (var item in _Data.LoanedBooks)
+            //    {
+            //        if (item.id == book.id)
+            //        {
+            //            Console.WriteLine("The book is on loan , you have to recieve it first");
+            //            count++;
+            //        }
+            //    }
+            //}
 
             if (count == 0)
             {
