@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Projects\\Lib v2.0\\LibraryUpgraded\\LibraryUpgraded\\LibraryUpgraded.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Projects\\ILIB\\Lib2\\LibraryUpgraded\\LibraryUpgraded.csproj",
       "projectName": "LibraryUpgraded",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Projects\\Lib v2.0\\LibraryUpgraded\\LibraryUpgraded\\LibraryUpgraded.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\Projects\\ILIB\\Lib2\\LibraryUpgraded\\LibraryUpgraded.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Projects\\Lib v2.0\\LibraryUpgraded\\LibraryUpgraded\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\Projects\\ILIB\\Lib2\\LibraryUpgraded\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
