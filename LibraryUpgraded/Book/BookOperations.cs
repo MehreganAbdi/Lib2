@@ -38,14 +38,18 @@ namespace LibraryUpgraded.Book
         public static void RemoveThis(_Book book)
         {
             int count = 0;
-            foreach(var item in _Data.AvailableBooks)
+
+            for (int i = 0; i < _Data.AvailableBooks.Count && _Data.AvailableBooks.Count > 0; i++)
+
             {
-                if(item.id == book.id && item.NumberOfBook>=1)
+                var item = _Data.AvailableBooks[i];
+                if (item.id == book.id && item.NumberOfBook >= 1)
                 {
                     if (book.NumberOfBook == 1)
                     {
-                    global: _Data.AvailableBooks.Remove(book); ;
-                        
+                        _Data.AvailableBooks.Remove(book); 
+                        book.NumberOfBook--;
+
                     }
                     else
                     {
@@ -54,6 +58,7 @@ namespace LibraryUpgraded.Book
                     count++;
                 }
             }
+
             //if (count == 0)
             //{
             //    foreach (var item in _Data.LoanedBooks)
@@ -66,11 +71,11 @@ namespace LibraryUpgraded.Book
             //    }
             //}
 
-            if (count == 0)
-            {
-                Console.WriteLine("couldn't find your requested book");
-            }
-        
+            //if (count == 0)
+            //{
+            //    Console.WriteLine("couldn't find your requested book");
+            //}
+
         }
 
 
@@ -79,11 +84,11 @@ namespace LibraryUpgraded.Book
         private static _Book FindBook(string name)
         {
             name = name.ToLower().Replace(" ", "");
-            _Book modalBook = new _Book("", 0,0 ,""); 
-            
+            _Book modalBook = new _Book("", 0, 0, "");
+
             foreach (var item in _Data.AllBooks)
             {
-                if(item.name == name)
+                if (item.name == name)
                 {
                     modalBook = item;
                 }
@@ -91,14 +96,14 @@ namespace LibraryUpgraded.Book
 
             return modalBook;
 
-        } 
+        }
 
         public static void SearchByName(string name)
         {
             name = name.ToLower().Replace(" ", "");
 
             _Book modalBook = new _Book("", 0, 0, "");
-            
+
             foreach (var item in _Data.AllBooks)
             {
                 if (item.name == name)
@@ -109,7 +114,7 @@ namespace LibraryUpgraded.Book
             if (modalBook.id != 0)
             {
                 Console.WriteLine($"{modalBook.name} by {modalBook.author} with id {modalBook.id} \n" +
-                    $" added in {modalBook.addedDate.ToString()} , remaining{modalBook.NumberOfBook}" );
+                    $" added in {modalBook.addedDate.ToString()} , remaining{modalBook.NumberOfBook}");
             }
             else
             {
@@ -126,7 +131,7 @@ namespace LibraryUpgraded.Book
 
             foreach (var item in _Data.AvailableBooks)
             {
-                if(book == item && item.NumberOfBook > 0)
+                if (book == item && item.NumberOfBook > 0)
                 {
                     answer = true;
                 }
