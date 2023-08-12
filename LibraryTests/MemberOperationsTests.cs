@@ -19,12 +19,12 @@ namespace LibraryTests
         [Fact]
         public void RemoveThis_AMemInstance()
         {
-            var mem = new _Member("mem", 1234);
-            MemberOperations.AddThis(mem);
+            var mem67 = new _Member("mem67", 9000);
+            MemberOperations.AddThis(mem67);
 
-            MemberOperations.RemoveThis(mem);
+            MemberOperations.RemoveThis(mem67);
 
-            Assert.DoesNotContain(mem, _Data.Members);
+            Assert.DoesNotContain(mem67, _Data.Members);
         }
 
         [Fact]

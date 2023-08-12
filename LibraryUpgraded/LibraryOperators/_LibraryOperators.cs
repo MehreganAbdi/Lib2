@@ -11,7 +11,7 @@ namespace LibraryUpgraded.LibraryOperators
 {
     public static class _LibraryOperators
     {
-        private static bool IsBan(_Member member)
+        public static bool IsBan(_Member member)
         {
             bool answer = false;
             foreach (var item in _Data.BannedMembers)
@@ -27,7 +27,8 @@ namespace LibraryUpgraded.LibraryOperators
 
         public static void Loan(_Member member, _Book book)
         {
-            if (!IsBan(member) && BookOperations.IsAvailable(book))
+            if ((!IsBan(member) && BookOperations.IsAvailable(book))
+                ||(_Data.BannedMembers.Count==0 && BookOperations.IsAvailable(book)))
             {
 
                 foreach (var item in _Data.AvailableBooks)
