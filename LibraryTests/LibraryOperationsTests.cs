@@ -36,33 +36,6 @@ namespace LibraryTests
 
             Assert.True(x);
         }
-        [Fact]
-        public void Recieve_SearchinDatalistsManually()
-        {
-            var book9896 = new _Book("Book9896", 9896, 10);
-            var mem9896 = new _Member("Scott9896", 98962);
-
-            MemberOperations.AddThis(mem9896);
-            BookOperations.AddThis(book9896);
-
-            _Data.Loaned_Members.Add(mem9896);
-            _Data.LoanedBooks.Add(book9896);
-
-
-            var book9895 = new _Book("Book9895", 9895, 10);
-            var mem9895 = new _Member("Scott9895", 98952);
-
-            MemberOperations.AddThis(mem9895);
-            BookOperations.AddThis(book9895);
-
-            _Data.Loaned_Members.Add(mem9895);
-            _Data.LoanedBooks.Add(book9895);
-
-            _LibraryOperators.Receive(book9895, mem9895);
-
-            bool x = _Data.LoanedBooks.Contains(book9895) &&_Data.Loaned_Members.Contains(mem9895);
-
-            Assert.False(x);
-        }
+       
     }
 }

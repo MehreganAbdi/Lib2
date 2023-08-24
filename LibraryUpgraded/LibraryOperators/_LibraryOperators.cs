@@ -76,16 +76,18 @@ namespace LibraryUpgraded.LibraryOperators
         private static int GetIndexInLoanList(_Member member, _Book book)
         {
             int index = -1;
-
-            for (int i = 0; i < _Data.Loaned_Members.Count; i++)
+            if (_Data.Loaned_Members.Count > 0 && _Data.LoanedBooks.Count > 0)
             {
-                if (_Data.Loaned_Members[i] == member && _Data.LoanedBooks[i] == book)
-                {
-                    index = i;
 
+                for (int i = 0; i < _Data.Loaned_Members.Count; i++)
+                {
+                    if (_Data.Loaned_Members[i] == member )
+                    {
+                        index = i;
+
+                    }
                 }
             }
-
             return index;
         }
 
@@ -94,6 +96,9 @@ namespace LibraryUpgraded.LibraryOperators
         public static void Receive(_Book book, _Member member)
         {
             int index = GetIndexInLoanList(member, book);
+            if(index != -1)
+            {
+
             if((book.LoaningDate-DateTime.Now).Days > 14)
             {
                 member.Fine_dollars = member.Fine_dollars + (0.25) * ((book.LoaningDate - DateTime.Now).Days);
@@ -108,6 +113,7 @@ namespace LibraryUpgraded.LibraryOperators
                 _Data.LoanedBooks.RemoveAt(index);
             }
             
+            }
 
 
         }
